@@ -77,7 +77,7 @@
         </div>
         <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">I am . . .</p>
         <div classs="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
-            
+
         </div>
     </section>
 </main>
