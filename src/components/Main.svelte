@@ -2,9 +2,26 @@
 	import Step from "./Step.svelte";
 
     let steps = [
-        {name: 'Never Quit', icon: 'fa-regular fa-dumbbell'},
-        {name: 'Personal Website', icon: 'fa-regular fa-desktop'},
-        {name: 'To Do List', icon: 'fa-regular fa-list-check'}
+        {name: 'Never Quit', 
+        icon: 'fa-regular fa-dumbbell',
+        href: "https://neverquit.netlify.app/"},
+
+        {name: 'Personal Website', 
+        icon: 'fa-regular fa-desktop',
+        href: "https://justinbilleci.netlify.app/"},
+
+        {name: 'To Do List', 
+        icon: 'fa-regular fa-list-check',
+        href: 'https://justinstodolist.netlify.app/'},
+    ];
+
+    let benefits = [
+    {name: 'a self taught developer', 
+    description: "I learned to code using free online resources and absolutely fell in love with the process, there's nothing I'd rather do."},
+    {name: 'a web design master', 
+    description: "I have a strong foundation and excellent work experience with Responsive Web Design, I view this as the strongest part of my skillset."},
+    {name: 'a great communicator', 
+    description: "Communication is just as important as coding ability in my eyes, so I make an effort to communicate as effectively and clearly as possible."},
     ]
 
 </script>
@@ -43,10 +60,10 @@
             </h3>
         </div>
 
-        <a href="" target="_blank" class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:mb-0 -mt-10 hover:border-green-700 duration-200" >
+        <!--- <a href="" target="_blank" class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:mb-0 -mt-10 hover:border-green-700 duration-200" >
             <i class="fa-regular fa-circle-play"></i>
             <p>Watch the video</p>
-        </a>
+        </a> --->
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step step={steps[0]}>
@@ -76,8 +93,20 @@
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl pb-4">A bit <span class="poppins text-green-500">about</span> me.</h3>
         </div>
         <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">I am . . .</p>
-        <div classs="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
-
+        <div class="flex flex-col gap-20 w-full mx-auto max-w-200">
+            {#each benefits as benefits, index}
+                <div class="flex gap-6 sm:gap-8">
+                    <p class="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
+                        0{index+1}
+                    </p>
+                    <div class="flex flex-col gap-6 sm:gap-8">
+                        <h3 class="text-2xl sm:text-3xl md:text-5xl">
+                            {benefits.name}
+                        </h3>
+                        <p>{benefits.description}</p>
+                    </div>
+                </div>
+            {/each}
         </div>
     </section>
 </main>
