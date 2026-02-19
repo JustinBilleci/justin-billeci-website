@@ -10,9 +10,9 @@
         icon: 'fa-regular fa-desktop',
         href: "https://justinbilleci.netlify.app/"},
 
-        {name: 'To Do List', 
+        {name: 'askMe', 
         icon: 'fa-regular fa-list-check',
-        href: 'https://justinstodolist.netlify.app/'},
+        href: 'https://askmeeee.netlify.app/'},
     ];
 
     let benefits = [
@@ -79,8 +79,8 @@
             </Step>
 
             <Step step={steps[2]}>
-                <p>This my personal to do list that I made with
-                    <strong class="text-green-400">React, Node.js, and TailwindCSS</strong>
+                <p>askMe is an ai prompt app made with
+                    <strong class="text-green-400">React, Node.js, Express.js, and TailwindCSS</strong>
                 </p>
             </Step>
         </div>
