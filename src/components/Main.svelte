@@ -6,9 +6,9 @@
         icon: 'fa-regular fa-dumbbell',
         href: "https://neverquit.netlify.app/"},
 
-        {name: 'Personal Website', 
+        {name: 'Widget Showcase', 
         icon: 'fa-regular fa-desktop',
-        href: "https://justinbilleci.netlify.app/"},
+        href: "https://widget-showcase.netlify.app/"},
 
         {name: 'askMe', 
         icon: 'fa-regular fa-list-check',
@@ -82,19 +82,19 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step step={steps[0]}>
                 <p>Never Quit is a personal workout generator made with 
-                    <strong class="text-green-400">React, Next.js, & TailwindCSS</strong>
+                    <strong class="text-green-400">React.js, Next.js, & TailwindCSS</strong>
                 </p>
             </Step>
 
             <Step step={steps[1]}>
-                <p>My personal website that you are on now was made with 
-                    <strong class="text-green-400">Svelte, Node.js, and TailwindCSS</strong>
+                <p>This site contains an interactive gallery of my web app widgets
+                    <strong class="text-green-400">React.js, Next.js, and TailwindCSS</strong>
                 </p>
             </Step>
 
             <Step step={steps[2]}>
                 <p>askMe is an ai prompt app made with
-                    <strong class="text-green-400">React, Node.js, Express.js, and TailwindCSS</strong>
+                    <strong class="text-green-400">React.js, Node.js, Express.js, and TailwindCSS</strong>
                 </p>
             </Step>
         </div>
